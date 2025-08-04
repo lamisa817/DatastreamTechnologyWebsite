@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FAQ - Datastream Technologies</title>
+  <style>
+
+/* Overall Header */
+.main-header {
+  padding: 20px 30px 0;
+  background: transparent;
+}
+
+/* Logo Section */
+.logo {
+  font-size: 1.6em;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 15px;
+}
+.logo span {
+  color: #ffd700;
+}
+
+/* Navbar Styling */
+.main-nav ul {
+  list-style: none;
+  padding: 10px 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+/* Navbar Links */
+.main-nav li {
+  margin: 10px 15px;
+}
+
+.main-nav a {
+  color: black;
+  font-weight: 900;
+  text-decoration: none;
+  font-size: 1.05em;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  transition: all 0.3s ease;
+}
+
+.main-nav a:hover {
+  color: #ffd700;
+  text-shadow: 0 0 8px #ffd700;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 20px;
+      background: linear-gradient(270deg, #001f4d, #ffd700, #8B0000, #FFCC00);
+      background-size: 400% 400%;
+      animation: gradientFlow 20s ease infinite;
+      color: white;
+    }
+
+    @keyframes gradientFlow {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    h1 {
+      text-align: center;
+      color: #ffd700;
+      margin-bottom: 30px;
+    }
+
+    .faq-container {
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .faq-item {
+      background-color: rgba(0, 0, 0, 0.5);
+      margin-bottom: 15px;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    }
+
+    .faq-question {
+      padding: 18px;
+      font-size: 1.1em;
+      cursor: pointer;
+      background-color: #00274d;
+      color: #ffd700;
+    }
+
+    .faq-answer {
+      padding: 16px;
+      display: none;
+      background-color: rgba(255, 255, 255, 0.1);
+      color: #fff9d1;
+      line-height: 1.6;
+    }
+
+    .faq-question:hover {
+      background-color: #003366;
+    }
+
+    .footer {
+      margin-top: 40px;
+      text-align: center;
+      font-size: 0.9em;
+      color: #ddd;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>❓ Frequently Asked Questions</h1>
+
+  <div class="faq-container">
+
+    <div class="faq-item">
+      <div class="faq-question">📦 What products does Datastream Technologies offer?</div>
+      <div class="faq-answer">We offer a wide range of vending machines, dispensing equipment, security systems, software solutions, and more — all tailored to meet your automation needs!</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">🔧 Do you provide maintenance and repair services?</div>
+      <div class="faq-answer">Yes! We offer annual contracts and ad-hoc repair services for all vending machines and equipment we supply.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">💡 Can I request a customized vending solution?</div>
+      <div class="faq-answer">Absolutely! We specialize in designing custom vending systems for drinks, snacks, cards, tickets, and even toiletries!</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">💻 Do you offer software support?</div>
+      <div class="faq-answer">Yes, we provide software development, customization, and consultation services to integrate with your vending systems.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">📞 How do I contact your support team?</div>
+      <div class="faq-answer">You can reach us via email, phone, or our website contact form. We respond promptly during business hours!</div>
+    </div>
+
+  </div>
+
+  <div class="footer">&copy; 2025 Datastream Technologies Sdn Bhd</div>
+
+  <script>
+    const questions = document.querySelectorAll('.faq-question');
+    questions.forEach(q => {
+      q.addEventListener('click', () => {
+        const answer = q.nextElementSibling;
+        answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+      });
+    });
+  </script>
+
+</body>
+
+<!-- 🌟 STYLISH MODERN NAVBAR -->
+<header class="main-header">
+  <div class="logo">💼 <span>Datastream Technologies</span></div>
+  <nav class="main-nav">
+    <ul>
+      <li><a href="2207 Dsthomepage.html">Home</a></li>
+      <li><a href="2107 Dstaboutus.html">About</a></li>
+      <li><a href="2407 Dstproduct.html">Products</a></li>
+      <li><a href="2107 Dstservice.html">Services</a></li>
+      <li><a href="2407 Dstblog.html">Blog</a></li>
+      <li><a href="2207 Dsttestimonials.html">Testimonials</a></li>
+      <li><a href="2307 Dstfaq.html">FAQ</a></li>
+      <li><a href="2207 Dstcareers.html">Careers</a></li>
+      <li><a href="2307 Dstnewsletter.html">Newsletter</a></li>
+      <li><a href="2407 Dstcontactus.html">Contact</a></li>
+      <li><a href="2507 Dstquote.html">Quote</a></li>
+      <li><a href="2507 Dstprojects.html">Projects</a></li>
+      <li><a href="2407 Dstresearch.html">R&D</a></li>
+      <li><a href="2507 Dstanalytics.html">Analytics</a></li>
+      <li><a href="2507 Dstlanguage.html">Language</a></li>
+      <li><a href="2407 Dsttermsandcondition.html">Terms</a></li>
+      <li><a href="2307 Dstprivacy.html">Privacy</a></li>
+      <li><a href="2207 Dstdashboard.html">Dashboard</a></li>
+      <li><a href="2507 Dstsiteemap.html">Sitemap</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

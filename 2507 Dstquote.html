@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Request a Quote - Datastream Technologies</title>
+  <style>
+
+/* Overall Header */
+.main-header {
+  padding: 20px 30px 0;
+  background: transparent;
+}
+
+/* Logo Section */
+.logo {
+  font-size: 1.6em;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 15px;
+}
+.logo span {
+  color: #ffd700;
+}
+
+/* Navbar Styling */
+.main-nav ul {
+  list-style: none;
+  padding: 10px 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+/* Navbar Links */
+.main-nav li {
+  margin: 10px 15px;
+}
+
+.main-nav a {
+  color: black;
+  font-weight: 900;
+  text-decoration: none;
+  font-size: 1.05em;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  transition: all 0.3s ease;
+}
+
+.main-nav a:hover {
+  color: #ffd700;
+  text-shadow: 0 0 8px #ffd700;
+}
+
+
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(270deg, #001f4d, #ffd700, #8B0000, #FFCC00);
+      background-size: 400% 400%;
+      animation: gradientFlow 20s ease infinite;
+      color: white;
+      padding: 30px;
+    }
+
+    @keyframes gradientFlow {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    h1 {
+      text-align: center;
+      color: #ffd700;
+      margin-bottom: 30px;
+    }
+
+    .form-box {
+      background-color: rgba(0, 0, 0, 0.4);
+      max-width: 700px;
+      margin: auto;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+    }
+
+    label {
+      display: block;
+      margin: 15px 0 5px;
+      font-weight: bold;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      border-radius: 6px;
+      border: none;
+      font-size: 1em;
+      margin-bottom: 15px;
+    }
+
+    button {
+      width: 100%;
+      background-color: #ffd700;
+      color: #001f4d;
+      font-weight: bold;
+      border: none;
+      padding: 12px;
+      font-size: 1em;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background-color: #ffe44c;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 40px;
+      color: #ccc;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>📩 Request a Quote</h1>
+
+  <div class="form-box">
+    <form action="#" method="post">
+      <label for="name">👤 Full Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">📧 Email Address</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">📞 Phone Number</label>
+      <input type="text" id="phone" name="phone">
+
+      <label for="category">📂 Product / Service Type</label>
+      <select id="category" name="category" required>
+        <option value="">-- Select a Category --</option>
+        <option value="security">🔐 Security</option>
+        <option value="software">💻 Software</option>
+        <option value="hardware">⚙️ Hardware</option>
+        <option value="maintenance">🔧 Maintenance</option>
+      </select>
+
+      <label for="item">💬 Preferred Item (e.g., CCTV, Dispenser)</label>
+      <input type="text" id="item" name="item" required>
+
+      <label for="budget">💰 Your Target Budget (RM)</label>
+      <input type="number" id="budget" name="budget" min="100" required>
+
+      <label for="message">📝 Message or Custom Requirements</label>
+      <textarea id="message" name="message" rows="4" placeholder="Let us know your needs..." required></textarea>
+
+      <button type="submit">Send Quote Request</button>
+    </form>
+  </div>
+
+  <div class="footer">
+    &copy; 2025 Datastream Technologies Sdn Bhd — We'll reply to your request soon!
+  </div>
+
+</body>
+
+<!-- 🌟 STYLISH MODERN NAVBAR -->
+<header class="main-header">
+  <div class="logo">💼 <span>Datastream Technologies</span></div>
+  <nav class="main-nav">
+    <ul>
+      <li><a href="2207 Dsthomepage.html">Home</a></li>
+      <li><a href="2107 Dstaboutus.html">About</a></li>
+      <li><a href="2407 Dstproduct.html">Products</a></li>
+      <li><a href="2107 Dstservice.html">Services</a></li>
+      <li><a href="2407 Dstblog.html">Blog</a></li>
+      <li><a href="2207 Dsttestimonials.html">Testimonials</a></li>
+      <li><a href="2307 Dstfaq.html">FAQ</a></li>
+      <li><a href="2207 Dstcareers.html">Careers</a></li>
+      <li><a href="2307 Dstnewsletter.html">Newsletter</a></li>
+      <li><a href="2407 Dstcontactus.html">Contact</a></li>
+      <li><a href="2507 Dstquote.html">Quote</a></li>
+      <li><a href="2507 Dstprojects.html">Projects</a></li>
+      <li><a href="2407 Dstresearch.html">R&D</a></li>
+      <li><a href="2507 Dstanalytics.html">Analytics</a></li>
+      <li><a href="2507 Dstlanguage.html">Language</a></li>
+      <li><a href="2407 Dsttermsandcondition.html">Terms</a></li>
+      <li><a href="2307 Dstprivacy.html">Privacy</a></li>
+      <li><a href="2207 Dstdashboard.html">Dashboard</a></li>
+      <li><a href="2507 Dstsiteemap.html">Sitemap</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+</html>

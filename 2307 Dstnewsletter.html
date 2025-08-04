@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Newsletter Signup - Datastream Technologies Sdn Bhd</title>
+  <style>
+
+/* Overall Header */
+.main-header {
+  padding: 20px 30px 0;
+  background: transparent;
+}
+
+/* Logo Section */
+.logo {
+  font-size: 1.6em;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 15px;
+}
+.logo span {
+  color: #ffd700;
+}
+
+/* Navbar Styling */
+.main-nav ul {
+  list-style: none;
+  padding: 10px 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+/* Navbar Links */
+.main-nav li {
+  margin: 10px 15px;
+}
+
+.main-nav a {
+  color: black;
+  font-weight: 900;
+  text-decoration: none;
+  font-size: 1.05em;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  transition: all 0.3s ease;
+}
+
+.main-nav a:hover {
+  color: #ffd700;
+  text-shadow: 0 0 8px #ffd700;
+}
+
+
+
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(270deg, #001f4d, #ffd700, #8B0000, #FFCC00);
+      background-size: 400% 400%;
+      animation: gradientFlow 20s ease infinite;
+      color: white;
+      padding: 50px;
+      text-align: center;
+    }
+
+    @keyframes gradientFlow {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      color: #ffd700;
+    }
+
+    p {
+      font-size: 1.2em;
+      margin-bottom: 30px;
+    }
+
+    form {
+      background-color: rgba(0, 0, 0, 0.4);
+      padding: 30px;
+      border-radius: 12px;
+      display: inline-block;
+      box-shadow: 0 0 10px rgba(0,0,0,0.6);
+    }
+
+    input[type="text"],
+    input[type="email"] {
+      width: 300px;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 5px;
+      border: none;
+      font-size: 1em;
+    }
+
+    button {
+      background-color: #ffd700;
+      border: none;
+      padding: 10px 20px;
+      font-size: 1.1em;
+      border-radius: 5px;
+      cursor: pointer;
+      color: black;
+      margin-top: 15px;
+    }
+
+    button:hover {
+      background-color: #ffcc00;
+    }
+
+    .success-message {
+      margin-top: 20px;
+      color: #90ee90;
+      font-size: 1.1em;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>📬 Subscribe to Our Newsletter</h1>
+  <p>Stay up-to-date with the latest news, updates, and product launches from Datastream Technologies Sdn Bhd!</p>
+
+  <form onsubmit="return showMessage();">
+    <input type="text" placeholder="Your Name" required><br>
+    <input type="email" placeholder="Your Email" required><br>
+    <button type="submit">Subscribe</button>
+    <div class="success-message" id="successMsg" style="display:none;">
+      🎉 Thank you for subscribing!
+    </div>
+  </form>
+
+  <script>
+    function showMessage() {
+      document.getElementById("successMsg").style.display = "block";
+      return false; // Prevent real form submission
+    }
+  </script>
+
+</body>
+
+<!-- 🌟 STYLISH MODERN NAVBAR -->
+<header class="main-header">
+  <div class="logo">💼 <span>Datastream Technologies</span></div>
+  <nav class="main-nav">
+    <ul>
+      <li><a href="2207 Dsthomepage.html">Home</a></li>
+      <li><a href="2107 Dstaboutus.html">About</a></li>
+      <li><a href="2407 Dstproduct.html">Products</a></li>
+      <li><a href="2107 Dstservice.html">Services</a></li>
+      <li><a href="2407 Dstblog.html">Blog</a></li>
+      <li><a href="2207 Dsttestimonials.html">Testimonials</a></li>
+      <li><a href="2307 Dstfaq.html">FAQ</a></li>
+      <li><a href="2207 Dstcareers.html">Careers</a></li>
+      <li><a href="2307 Dstnewsletter.html">Newsletter</a></li>
+      <li><a href="2407 Dstcontactus.html">Contact</a></li>
+      <li><a href="2507 Dstquote.html">Quote</a></li>
+      <li><a href="2507 Dstprojects.html">Projects</a></li>
+      <li><a href="2407 Dstresearch.html">R&D</a></li>
+      <li><a href="2507 Dstanalytics.html">Analytics</a></li>
+      <li><a href="2507 Dstlanguage.html">Language</a></li>
+      <li><a href="2407 Dsttermsandcondition.html">Terms</a></li>
+      <li><a href="2307 Dstprivacy.html">Privacy</a></li>
+      <li><a href="2207 Dstdashboard.html">Dashboard</a></li>
+      <li><a href="2507 Dstsiteemap.html">Sitemap</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

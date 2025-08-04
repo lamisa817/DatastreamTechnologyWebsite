@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard - Datastream Technologies Sdn Bhd</title>
+  <style>
+
+.admin-login-btn {
+  display: inline-block;
+  padding: 12px 25px;
+  background: #ffd700;
+  color: black;
+  font-weight: bold;
+  font-size: 1.1em;
+  border-radius: 8px;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  transition: 0.3s ease;
+  margin: 40px auto;
+  text-align: center;
+}
+
+.admin-login-btn:hover {
+  background: white;
+  color: #000;
+  transform: scale(1.05);
+}
+
+.login-container {
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Overall Header */
+.main-header {
+  padding: 20px 30px 0;
+  background: transparent;
+}
+
+/* Logo Section */
+.logo {
+  font-size: 1.6em;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 15px;
+}
+.logo span {
+  color: #ffd700;
+}
+
+/* Navbar Styling */
+.main-nav ul {
+  list-style: none;
+  padding: 10px 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+/* Navbar Links */
+.main-nav li {
+  margin: 10px 15px;
+}
+
+.main-nav a {
+  color: black;
+  font-weight: 900;
+  text-decoration: none;
+  font-size: 1.05em;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  transition: all 0.3s ease;
+}
+
+.main-nav a:hover {
+  color: #ffd700;
+  text-shadow: 0 0 8px #ffd700;
+}
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(270deg, #001f4d, #ffd700, #8B0000, #FFCC00);
+      background-size: 400% 400%;
+      animation: gradientFlow 20s ease infinite;
+      color: white;
+      margin: 0;
+      padding: 0;
+    }
+
+    @keyframes gradientFlow {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    header {
+      padding: 20px;
+      text-align: center;
+      background-color: rgba(0,0,0,0.4);
+      border-bottom: 2px solid #ffd700;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+      color: #ffd700;
+    }
+
+    .dashboard-container {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      background-color: rgba(255, 255, 255, 0.08);
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card h3 {
+      color: #ffd700;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      font-size: 0.95em;
+      color: #ffefa3;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: rgba(0,0,0,0.3);
+      color: #ccc;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>📊 Dashboard - Datastream Technologies Sdn Bhd</h1>
+  </header>
+
+  <div class="dashboard-container">
+
+    <div class="card">
+      <h3>🧾 Total Sales</h3>
+      <p>RM 152,000 this month</p>
+    </div>
+
+    <div class="card">
+      <h3>📦 Machines in Operation</h3>
+      <p>126 vending machines deployed</p>
+    </div>
+
+    <div class="card">
+      <h3>⚠️ Low Stock Alerts</h3>
+      <p>8 machines need restocking</p>
+    </div>
+
+    <div class="card">
+      <h3>🔧 Maintenance Tickets</h3>
+      <p>5 issues reported (2 pending, 3 resolved)</p>
+    </div>
+
+    <div class="card">
+      <h3>💳 Active Payment Gateways</h3>
+      <p>TnG eWallet, Boost, CardX, DuitNow</p>
+    </div>
+
+    <div class="card">
+      <h3>📈 System Health</h3>
+      <p>All systems operational (100%)</p>
+    </div>
+
+  </div>
+
+    <!-- 🔐 ADMIN LOGIN BUTTON -->
+<div class="login-container">
+  <a href="2207 Dstaadminlogin.html" class="admin-login-btn">🔐 Admin Login</a>
+</div>
+
+  <footer>
+    &copy; 2025 Datastream Technologies Sdn Bhd — Secure. Smart. Reliable.
+  </footer>
+
+</body>
+
+<!-- 🌟 STYLISH MODERN NAVBAR -->
+<header class="main-header">
+  <div class="logo">💼 <span>Datastream Technologies</span></div>
+  <nav class="main-nav">
+    <ul>
+      <li><a href="2207 Dsthomepage.html">Home</a></li>
+      <li><a href="2107 Dstaboutus.html">About</a></li>
+      <li><a href="2407 Dstproduct.html">Products</a></li>
+      <li><a href="2107 Dstservice.html">Services</a></li>
+      <li><a href="2407 Dstblog.html">Blog</a></li>
+      <li><a href="2207 Dsttestimonials.html">Testimonials</a></li>
+      <li><a href="2307 Dstfaq.html">FAQ</a></li>
+      <li><a href="2207 Dstcareers.html">Careers</a></li>
+      <li><a href="2307 Dstnewsletter.html">Newsletter</a></li>
+      <li><a href="2407 Dstcontactus.html">Contact</a></li>
+      <li><a href="2507 Dstquote.html">Quote</a></li>
+      <li><a href="2507 Dstprojects.html">Projects</a></li>
+      <li><a href="2407 Dstresearch.html">R&D</a></li>
+      <li><a href="2507 Dstanalytics.html">Analytics</a></li>
+      <li><a href="2507 Dstlanguage.html">Language</a></li>
+      <li><a href="2407 Dsttermsandcondition.html">Terms</a></li>
+      <li><a href="2307 Dstprivacy.html">Privacy</a></li>
+      <li><a href="2207 Dstdashboard.html">Dashboard</a></li>
+      <li><a href="2507 Dstsiteemap.html">Sitemap</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
+
+
+
+
+

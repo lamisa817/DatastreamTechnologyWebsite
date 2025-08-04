@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Services - Yata Jasamedia</title>
+  <style>
+
+/* Overall Header */
+.main-header {
+  padding: 20px 30px 0;
+  background: transparent;
+}
+
+/* Logo Section */
+.logo {
+  font-size: 1.6em;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 15px;
+}
+.logo span {
+  color: #ffd700;
+}
+
+/* Navbar Styling */
+.main-nav ul {
+  list-style: none;
+  padding: 10px 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+/* Navbar Links */
+.main-nav li {
+  margin: 10px 15px;
+}
+
+.main-nav a {
+  color: black;
+  font-weight: 900;
+  text-decoration: none;
+  font-size: 1.05em;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  transition: all 0.3s ease;
+}
+
+.main-nav a:hover {
+  color: #ffd700;
+  text-shadow: 0 0 8px #ffd700;
+}
+
+
+body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(270deg, #001f4d, #ffd700, #8B0000, #FFCC00);
+      background-size: 400% 400%;
+      animation: gradientFlow 20s ease infinite;
+      color: white;
+      padding: 20px;
+    }
+         
+
+    @keyframes gradientFlow {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    h1 {
+      text-align: center;
+      color: #ffd700;
+    }
+
+    .controls {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin: 20px 0;
+    }
+
+    .controls select {
+      margin: 10px;
+      padding: 8px;
+      font-size: 1em;
+      border-radius: 5px;
+      border: none;
+    }
+
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+    }
+
+    .service {
+      background-color: rgba(0, 0, 0, 0.4);
+      border-radius: 10px;
+      padding: 15px;
+      width: 270px;
+      text-align: center;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+
+    .service:hover {
+      transform: scale(1.05);
+    }
+
+    .service img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+
+    .price {
+      color: #ffd700;
+      font-weight: bold;
+      margin: 5px 0;
+    }
+
+    .service-details {
+      display: none;
+      margin-top: 10px;
+      color: #ffefa3;
+    }
+
+    .category-label {
+      font-size: 0.9em;
+      font-style: italic;
+      margin-bottom: 5px;
+      color: #ccc;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🛠️ Our Services</h1>
+
+  <div class="controls">
+    <select id="categoryFilter">
+      <option value="all">🔎 Filter by Category</option>
+      <option value="security">🔐 Security</option>
+      <option value="software">💻 Software</option>
+      <option value="hardware">⚙️ Hardware</option>
+      <option value="maintenance">🔧 Maintenance</option>
+    </select>
+
+    <select id="priceSort">
+      <option value="default">💰 Sort by Price</option>
+      <option value="low">⬇️ Low to High</option>
+      <option value="high">⬆️ High to Low</option>
+    </select>
+  </div>
+
+  <div class="services" id="serviceContainer">
+
+   <!-- 🔐 SECURITY PRODUCTS -->
+<div class="service" data-category="security" data-price="4500">
+  <div class="category-label">🔐 Security</div>
+  <img src="https://butterflymx.com/wp-content/uploads/2022/11/CCTV-Installation-Guide-social.jpg" alt="CCTV System">
+  <h3>✨ CCTV System Setup</h3>
+  <div class="price">RM 4500</div>
+  <div class="service-details">HD CCTV cameras with live monitoring and mobile alerts.</div>
+</div>
+
+<div class="service" data-category="security" data-price="5000">
+  <div class="category-label">🔐 Security</div>
+  <img src="https://www.midwestalarmservices.com/wp-content/uploads/2024/04/Midwest-Alarm-Services_Blog-Images_0001_Types-of-access-control.jpg" alt="Access Control">
+  <h3>🛡️ Access Control System</h3>
+  <div class="price">RM 5000</div>
+  <div class="service-details">Fingerprint & RFID-based secure access for facilities.</div>
+</div>
+
+<div class="service" data-category="security" data-price="4700">
+  <div class="category-label">🔐 Security</div>
+  <img src="https://www.palcon.com.my/wp-content/uploads/2022/11/Fire-Alarm-Monitoring-System-Keep-Your-Building-Safe.jpg" alt="Alarm Monitoring">
+  <h3>🚨 Alarm Monitoring System</h3>
+  <div class="price">RM 4700</div>
+  <div class="service-details">Real-time alarm alerts with central control panel integration.</div>
+</div>
+
+<!-- 💻 SOFTWARE PRODUCTS -->
+<div class="service" data-category="software" data-price="3800">
+  <div class="category-label">💻 Software</div>
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzN5fm3QFy1pRb3NcHo1uLXkqdxAyBOQpg7w&s" alt="Vending App">
+  <h3>🧠 Custom Vending App</h3>
+  <div class="price">RM 3800</div>
+  <div class="service-details">Mobile/web apps to monitor and refill vending machines.</div>
+</div>
+
+<div class="service" data-category="software" data-price="3500">
+  <div class="category-label">💻 Software</div>
+  <img src="https://img.freepik.com/free-photo/person-paying-with-its-smartphone-wallet-app_23-2149167248.jpg?semt=ais_hybrid&w=740" alt="ePayment">
+  <h3>💳 ePayment System Integration</h3>
+  <div class="price">RM 3500</div>
+  <div class="service-details">Integrate TnG, QR Pay, and card payment into your vending machines.</div>
+</div>
+
+<div class="service" data-category="software" data-price="3900">
+  <div class="category-label">💻 Software</div>
+  <img src="https://thumbs.dreamstime.com/b/control-panel-displays-red-light-colorful-buttons-highlighting-crucial-moment-industrial-setting-advanced-359623156.jpg" alt="Stock Alert">
+  <h3>📦 Auto Stock Alert</h3>
+  <div class="price">RM 3900</div>
+  <div class="service-details">Alerts for low stock & auto restock dashboard notifications.</div>
+</div>
+
+<!-- ⚙️ HARDWARE PRODUCTS -->
+<div class="service" data-category="hardware" data-price="3200">
+  <div class="category-label">⚙️ Hardware</div>
+  <img src="https://image.made-in-china.com/202f0j00NKjtRkgBAuqe/Ice-Bank-Beverage-Cooler-on-Countertop.jpg" alt="Cooler">
+  <h3>❄️ Ice Bank Cooler</h3>
+  <div class="price">RM 3200</div>
+  <div class="service-details">Cooling solution for beverage dispensers and tea trolleys.</div>
+</div>
+
+<div class="service" data-category="hardware" data-price="4000">
+  <div class="category-label">⚙️ Hardware</div>
+  <img src="https://topmaple.com.my/wp-content/uploads/2022/06/Cold-Beverage-Dispenser-O-SL003-3S-1.jpg" alt="Dispenser">
+  <h3>🥤 Beverage Dispenser</h3>
+  <div class="price">RM 4000</div>
+  <div class="service-details">Automatic dispensers for chilled drinks, adjustable size.</div>
+</div>
+
+<div class="service" data-category="hardware" data-price="3600">
+  <div class="category-label">⚙️ Hardware</div>
+  <img src="https://alliedfse.com/wp-content/uploads/2019/09/banquet-trolley-1.jpg" alt="Tea Trolley">
+  <h3>🧋 Ice-Tea Trolley Unit</h3>
+  <div class="price">RM 3600</div>
+  <div class="service-details">Mobile trolley with built-in ice container & cup holder.</div>
+</div>
+
+<!-- 🔧 MAINTENANCE PRODUCTS -->
+<div class="service" data-category="maintenance" data-price="2800">
+  <div class="category-label">🔧 Maintenance</div>
+  <img src="https://mysewingmall.com/cdn/shop/files/AdobeStock_197654879.jpg?v=1685604784&width=3840" alt="Machine Repair">
+  <h3>🔄 Machine Repair Service</h3>
+  <div class="price">RM 2800</div>
+  <div class="service-details">Repair and replacement of vending machine components.</div>
+</div>
+
+<div class="service" data-category="maintenance" data-price="2600">
+  <div class="category-label">🔧 Maintenance</div>
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkN9i2Rq2Xs6Go9KbtRCq9LIETdo3Cd1mzfg&s" alt="Cleaning">
+  <h3>🧽 Monthly Cleaning</h3>
+  <div class="price">RM 2600</div>
+  <div class="service-details">Scheduled hygiene and dust removal for machines.</div>
+</div>
+
+<div class="service" data-category="maintenance" data-price="3000">
+  <div class="category-label">🔧 Maintenance</div>
+  <img src="https://mastermechanic.ca/content/uploads/2023/08/AdobeStock_242678590-1024x683.jpg" alt="Tune-Up">
+  <h3>🛠️ Annual Tune-Up</h3>
+  <div class="price">RM 3000</div>
+  <div class="service-details">Comprehensive diagnostics and internal cleaning.</div>
+</div>
+
+  </div>
+
+  <script>
+  
+
+</script>
+
+
+<script>
+  const categoryFilter = document.getElementById('categoryFilter');
+  const priceSort = document.getElementById('priceSort');
+  const container = document.getElementById('serviceContainer');
+  const cards = Array.from(container.getElementsByClassName('service'));
+
+  // ❌ Hide all services on page load
+  window.onload = () => {
+    cards.forEach(card => {
+      card.style.display = 'none';
+    });
+  };
+
+  // ✅ Show matching cards when category is selected
+  categoryFilter.addEventListener('change', () => {
+    const selectedCategory = categoryFilter.value;
+
+    // First hide everything
+    cards.forEach(card => {
+      card.style.display = 'none';
+    });
+
+    // Then show all that match the selected category
+    cards.forEach(card => {
+      const cardCategory = card.getAttribute('data-category');
+      if (selectedCategory === 'all' || cardCategory === selectedCategory) {
+        card.style.display = 'block';
+      }
+    });
+
+    // Re-apply sorting if already selected
+    if (priceSort.value !== 'default') {
+      triggerSort();
+    }
+  });
+
+  // ✅ Sort only the visible (filtered) cards
+  priceSort.addEventListener('change', () => {
+    triggerSort();
+  });
+
+  function triggerSort() {
+    const sortValue = priceSort.value;
+
+    // Get all cards that are currently visible
+    const visibleCards = cards.filter(card => card.style.display !== 'none');
+
+    const sortedCards = visibleCards.sort((a, b) => {
+      const priceA = parseInt(a.dataset.price);
+      const priceB = parseInt(b.dataset.price);
+      return sortValue === 'low' ? priceA - priceB : priceB - priceA;
+    });
+
+    // Re-append them in the sorted order (without hiding others!)
+    sortedCards.forEach(card => {
+      container.appendChild(card);
+    });
+  }
+
+  // ✅ Toggle description when clicking a service
+  cards.forEach(card => {
+    card.addEventListener('click', () => {
+      const detail = card.querySelector('.service-details');
+      detail.style.display = detail.style.display === 'block' ? 'none' : 'block';
+    });
+  });
+</script>
+<script>
+  const categoryFilter = document.getElementById('categoryFilter');
+  const priceSort = document.getElementById('priceSort');
+  const container = document.getElementById('serviceContainer');
+  const cards = Array.from(container.getElementsByClassName('service'));
+
+  let categorySelected = false;
+
+  // 🔒 On page load — hide everything
+  window.onload = () => {
+    cards.forEach(card => card.style.display = 'none');
+  };
+
+  // ✅ Filter by category ONLY when user clicks
+  categoryFilter.addEventListener('change', () => {
+    const selectedCategory = categoryFilter.value;
+    categorySelected = true;
+
+    // Hide all first
+    cards.forEach(card => {
+      card.style.display = 'none';
+    });
+
+    // Show all that match
+    cards.forEach(card => {
+      const cardCategory = card.getAttribute('data-category');
+      if (selectedCategory === 'all' || cardCategory === selectedCategory) {
+        card.style.display = 'block';
+      }
+    });
+
+    // If price sort already selected, apply sorting too
+    if (priceSort.value !== 'default') {
+      applySort();
+    }
+  });
+
+  // ✅ Sort only currently visible cards
+  priceSort.addEventListener('change', () => {
+    if (categorySelected) {
+      applySort();
+    }
+  });
+
+  // ✅ Sorting function
+  function applySort() {
+    const sortVal = priceSort.value;
+    const visibleCards = cards.filter(card => card.style.display !== 'none');
+
+    visibleCards.sort((a, b) => {
+      const priceA = parseInt(a.dataset.price);
+      const priceB = parseInt(b.dataset.price);
+      return sortVal === 'low' ? priceA - priceB : priceB - priceA;
+    });
+
+    visibleCards.forEach(card => container.appendChild(card));
+  }
+
+  // ✅ Toggle details when card clicked
+  cards.forEach(card => {
+    card.addEventListener('click', () => {
+      const detail = card.querySelector('.service-details');
+      detail.style.display = detail.style.display === 'block' ? 'none' : 'block';
+    });
+  });
+</script>
+</body>
+
+
+<!-- 🌟 STYLISH MODERN NAVBAR -->
+<header class="main-header">
+  <div class="logo">💼 <span>Datastream Technologies</span></div>
+  <nav class="main-nav">
+    <ul>
+      <li><a href="2207 Dsthomepage.html">Home</a></li>
+      <li><a href="2107 Dstaboutus.html">About</a></li>
+      <li><a href="2407 Dstproduct.html">Products</a></li>
+      <li><a href="2107 Dstservice.html">Services</a></li>
+      <li><a href="2407 Dstblog.html">Blog</a></li>
+      <li><a href="2207 Dsttestimonials.html">Testimonials</a></li>
+      <li><a href="2307 Dstfaq.html">FAQ</a></li>
+      <li><a href="2207 Dstcareers.html">Careers</a></li>
+      <li><a href="2307 Dstnewsletter.html">Newsletter</a></li>
+      <li><a href="2407 Dstcontactus.html">Contact</a></li>
+      <li><a href="2507 Dstquote.html">Quote</a></li>
+      <li><a href="2507 Dstprojects.html">Projects</a></li>
+      <li><a href="2407 Dstresearch.html">R&D</a></li>
+      <li><a href="2507 Dstanalytics.html">Analytics</a></li>
+      <li><a href="2507 Dstlanguage.html">Language</a></li>
+      <li><a href="2407 Dsttermsandcondition.html">Terms</a></li>
+      <li><a href="2307 Dstprivacy.html">Privacy</a></li>
+      <li><a href="2207 Dstdashboard.html">Dashboard</a></li>
+      <li><a href="2507 Dstsiteemap.html">Sitemap</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

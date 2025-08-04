@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Multi-Language Support - Datastream</title>
+  <style>
+
+/* Overall Header */
+.main-header {
+  padding: 20px 30px 0;
+  background: transparent;
+}
+
+/* Logo Section */
+.logo {
+  font-size: 1.6em;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 15px;
+}
+.logo span {
+  color: #ffd700;
+}
+
+/* Navbar Styling */
+.main-nav ul {
+  list-style: none;
+  padding: 10px 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+/* Navbar Links */
+.main-nav li {
+  margin: 10px 15px;
+}
+
+.main-nav a {
+  color: black;
+  font-weight: 900;
+  text-decoration: none;
+  font-size: 1.05em;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  transition: all 0.3s ease;
+}
+
+.main-nav a:hover {
+  color: #ffd700;
+  text-shadow: 0 0 8px #ffd700;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(270deg, #001f4d, #ffd700, #8B0000, #FFCC00);
+      background-size: 400% 400%;
+      animation: gradientFlow 20s ease infinite;
+      color: white;
+      padding: 40px;
+    }
+
+    @keyframes gradientFlow {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    h1 {
+      text-align: center;
+      color: #ffd700;
+      margin-bottom: 30px;
+    }
+
+    .lang-box {
+      max-width: 700px;
+      margin: auto;
+      background: rgba(0, 0, 0, 0.4);
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.5);
+      text-align: center;
+    }
+
+    select {
+      padding: 10px;
+      border-radius: 5px;
+      font-size: 1em;
+      margin-bottom: 20px;
+    }
+
+    .content {
+      font-size: 1.2em;
+      color: #ffefa3;
+      line-height: 1.7;
+    }
+
+    footer {
+      margin-top: 40px;
+      text-align: center;
+      color: #ccc;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🌐 Multi-Language Support</h1>
+
+  <div class="lang-box">
+    <label for="language" style="font-size: 1.1em;">🌍 Choose Language:</label><br><br>
+    <select id="language">
+      <option value="en">🇬🇧 English</option>
+      <option value="ms">🇲🇾 Bahasa Melayu</option>
+      <option value="zh">🇨🇳 中文</option>
+    </select>
+
+    <div class="content" id="translatedText">
+      Welcome to Datastream Technologies. We provide smart vending solutions and automation services to power the future!
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Datastream Technologies Sdn Bhd — Multilingual Ready 🌐
+  </footer>
+
+  <script>
+    const languageSelector = document.getElementById("language");
+    const contentBox = document.getElementById("translatedText");
+
+    const translations = {
+      en: "Welcome to Datastream Technologies. We provide smart vending solutions and automation services to power the future!",
+      ms: "Selamat datang ke Datastream Technologies. Kami menyediakan penyelesaian mesin layan diri pintar dan perkhidmatan automasi untuk masa depan!",
+      zh: "欢迎来到 Datastream Technologies。我们提供智能自动售货和自动化服务，为未来赋能！"
+    };
+
+    languageSelector.addEventListener("change", () => {
+      const selected = languageSelector.value;
+      contentBox.innerText = translations[selected];
+    });
+  </script>
+
+</body>
+
+
+<!-- 🌟 STYLISH MODERN NAVBAR -->
+<header class="main-header">
+  <div class="logo">💼 <span>Datastream Technologies</span></div>
+  <nav class="main-nav">
+    <ul>
+      <li><a href="2207 Dsthomepage.html">Home</a></li>
+      <li><a href="2107 Dstaboutus.html">About</a></li>
+      <li><a href="2407 Dstproduct.html">Products</a></li>
+      <li><a href="2107 Dstservice.html">Services</a></li>
+      <li><a href="2407 Dstblog.html">Blog</a></li>
+      <li><a href="2207 Dsttestimonials.html">Testimonials</a></li>
+      <li><a href="2307 Dstfaq.html">FAQ</a></li>
+      <li><a href="2207 Dstcareers.html">Careers</a></li>
+      <li><a href="2307 Dstnewsletter.html">Newsletter</a></li>
+      <li><a href="2407 Dstcontactus.html">Contact</a></li>
+      <li><a href="2507 Dstquote.html">Quote</a></li>
+      <li><a href="2507 Dstprojects.html">Projects</a></li>
+      <li><a href="2407 Dstresearch.html">R&D</a></li>
+      <li><a href="2507 Dstanalytics.html">Analytics</a></li>
+      <li><a href="2507 Dstlanguage.html">Language</a></li>
+      <li><a href="2407 Dsttermsandcondition.html">Terms</a></li>
+      <li><a href="2307 Dstprivacy.html">Privacy</a></li>
+      <li><a href="2207 Dstdashboard.html">Dashboard</a></li>
+      <li><a href="2507 Dstsiteemap.html">Sitemap</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
